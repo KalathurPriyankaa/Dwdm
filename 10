@@ -1,0 +1,32 @@
+# Exam results for Class A and Class B
+class_a <- c(76, 35, 47, 64, 95, 66, 89, 36, 84)
+class_b <- c(51, 56, 84, 60, 59, 70, 63, 66, 50)
+
+# Calculate mean, median, and range for Class A
+mean_a <- mean(class_a)
+median_a <- median(class_a)
+range_a <- max(class_a) - min(class_a)
+
+# Calculate mean, median, and range for Class B
+mean_b <- mean(class_b)
+median_b <- median(class_b)
+range_b <- max(class_b) - min(class_b)
+
+# Compare mean, median, and range between the two classes
+if (mean_a > mean_b) {
+  cat("Class A has a higher mean score.\n")
+} else {
+  cat("Class B has a higher mean score.\n")
+}
+
+if (median_a > median_b) {
+  cat("Class A has a higher median score.\n")
+} else {
+  cat("Class B has a higher median score.\n")
+}
+
+if (range_a > range_b) {
+  cat("Class A has a higher range of scores.\n")
+} else {
+  cat("Class B has a higher range of scores.\n")
+}
